@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="style.css">
+    <title>2KDECOUVERTE</title>
+</head>
+<body>
+     <section class="showcase">
+        <header>
+            <h2 class="logo">2KDECOUVERTE</h2>
+            <div class="toggle"></div>
+        </header>
+
+        <video src="vue.mp4" muted loop autoplay></video>
+
+        <div class="overlay"></div>
+
+        <div class="text">
+            <h3>BIENVENUE AU SENEGAL</h3>
+            <h4> DALLAL AK DIAMM</h4>
+            <p> Pays d'Afrique de l'ouest, le SENEGAL borde l'ocèan atlantique. <br> De plus, le pays de la TERANGA regorge de sites dépaysants et uniques.</p>
+            <a href="dakar.html" class="explorer"> DECOUVREZ LES TRESORS DU SENEGAL</a>
+        </div>
+
+        <ul class="social">
+            <li><img src="insta.png" alt=""></li>
+            <li><img src="facebook.png" alt=""></li>
+            <li><img src="twitter.png" alt=""></li>
+        </ul>
+     </section>
+
+     <div class="menu">
+     <ul>
+         <li id="lien"> <a href="index.html">ACCUEIL</a></li>
+         <li> <a href="dakar.html">DAKAR</a></li>
+         <li> <a href="gorée.html">GOREE</a></li>
+         <li> <a href="sine-saloum.html">SINE-SALOUM</a></li>
+         <li> <a href="lacrose.html">LAC ROSE</a></li>
+         <li> <a href="safari.html">SAFARI</a></li>
+         <li> <a href="kedougou.html"> KEDOUGOU</a></li>
+     </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+
+        })
+    </script>
+</body>
+</html>
